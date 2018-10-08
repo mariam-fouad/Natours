@@ -55,6 +55,8 @@ body{
 .heading-primary{
     color:#fff;
     text-transform: uppercase;
+
+    backface-visibility: hidden;
 }
 
 .heading-primary-main{
@@ -62,6 +64,9 @@ body{
     font-size: 60px;
     font-weight: 400px;
     letter-spacing: 35px;
+    animation-name: moveFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .heading-primary-sub{
@@ -69,4 +74,19 @@ body{
     font-size: 20px;
     font-weight: 700px;
     letter-spacing: 17.4px;
+}
+
+@keyframes moveFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        opacity: 0.6;
+        transform: translate(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
