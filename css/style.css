@@ -111,6 +111,19 @@ body{
     }
 }
 
+@keyframes moveFromButtom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .btn:Link,
 .btn:visited{
     text-decoration: none;
@@ -120,6 +133,7 @@ body{
     text-transform: uppercase;
     transition: all 0.2s;
     position: relative;
+    animation: moveFromButtom 0.5s ease-out 0.4s;
 }
 
 .btn:hover{
@@ -148,6 +162,7 @@ body{
     left:0;
     z-index: -1;
     transition: all 0.4s;
+
 }
 
 .btn-white::after{
