@@ -5,3 +5,31 @@ body{
     line-height: 1.7;
     color:$color-grey-dark;
 }
+
+.heading-primary{
+    color:$color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+
+    &--main{
+        display:block;
+        font-size: 6rem;
+        font-weight: 4rem;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveFromLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 70rem;
+        letter-spacing: 1.74rem;
+    
+        animation: moveFromRight 1s ease-out;
+    }
+}
