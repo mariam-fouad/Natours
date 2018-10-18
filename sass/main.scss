@@ -147,6 +147,10 @@ body{
     &:hover{
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
     }
 
     &:active{
@@ -157,6 +161,11 @@ body{
     &--white{
         color:$color-grey-dark;
         background-color: $color-white;
+
+        &::after{
+            background-color: $color-white;
+        }
+    
     }
 
     &::after{
@@ -173,14 +182,6 @@ body{
 
     }
 
-    &--white::after{
-        background-color: $color-white;
-    }
-
-    &:hover::after{
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-    }
 
     &--animated{
         animation: moveFromButtom 0.5s ease-out 0.3s;
