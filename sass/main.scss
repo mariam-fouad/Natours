@@ -3,6 +3,12 @@
 @import "base/typography";
 @import "base/utilitiess";
 
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "pages/home";
+
 $color-primary: #55c57a;
 $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
