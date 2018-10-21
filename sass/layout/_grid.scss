@@ -8,6 +8,7 @@
     .col-1-2{
         width: calc( (100% - #{$gutter-horizontal}) /2 );
         background-color: red;
+        float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
         }
