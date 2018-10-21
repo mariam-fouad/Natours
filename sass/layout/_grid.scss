@@ -6,10 +6,10 @@
         margin-bottom: $gutter-vertical;
     }
     .col-1-2{
-        width: calc( (100% - #{$gutter-horizonta}) /2 );
+        width: calc( (100% - #{$gutter-horizontal}) /2 );
         background-color: red;
         &:not(:last-child){
-            margin-right: $gutter-horizonta;
+            margin-right: $gutter-horizontal;
         }
     }
 
