@@ -69,6 +69,13 @@ body {
     letter-spacing: 1.74rem;
     animation: moveFromRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .btn:Link, .btn:visited {
   text-decoration: none;
   display: inline-block;
