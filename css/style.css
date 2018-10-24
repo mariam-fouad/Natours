@@ -71,10 +71,17 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    transform: skewY(10deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .btn:Link, .btn:visited {
   text-decoration: none;
