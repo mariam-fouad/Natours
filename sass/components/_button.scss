@@ -55,3 +55,16 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-txt{
+    &:Link,
+    &:visited{
+        font-size: $text-size-primary;
+        text-decoration: none;
+        color:$color-primary;
+        padding: .3rem;
+        display: inline-block;
+        border-bottom: .1rem solid $color-primary;
+    }
+
+}
