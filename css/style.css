@@ -83,6 +83,9 @@ body {
     transform: skewY(10deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
+.u-text-center {
+  text-align: center; }
+
 .btn:Link, .btn:visited {
   text-decoration: none;
   display: inline-block;
