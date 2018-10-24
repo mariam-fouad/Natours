@@ -163,6 +163,10 @@ body {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
+.btn-txt:active {
+  transform: translateY(0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
