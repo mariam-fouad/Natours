@@ -86,6 +86,9 @@ body {
 .u-text-center {
   text-align: center; }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn:Link, .btn:visited {
   text-decoration: none;
   display: inline-block;
