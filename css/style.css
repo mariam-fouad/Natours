@@ -88,6 +88,11 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-text-center {
   text-align: center; }
 
