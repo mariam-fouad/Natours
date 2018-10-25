@@ -19,6 +19,13 @@
         transform: scale(1.05) translateY(-2rem);
         background-color: rgba($color-white,0.99);
         box-shadow: 0 3rem 5rem rgba($color-black,0.4);
+
+        & .heading-tertiary{
+            border-bottom: .1rem solid $color-primary;
+            display: table;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
     }
 
 }

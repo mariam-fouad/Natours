@@ -211,6 +211,11 @@ body {
     transform: scale(1.05) translateY(-2rem);
     background-color: rgba(255, 255, 255, 0.99);
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
+    .feature-box:hover .heading-tertiary {
+      border-bottom: 0.1rem solid #55c57a;
+      display: table;
+      margin: auto;
+      margin-bottom: 2rem; }
 
 .row {
   max-width: 114rem;
