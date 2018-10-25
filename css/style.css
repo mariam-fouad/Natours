@@ -207,12 +207,14 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box > .heading-tertiary {
+    border-bottom: .1rem solid transparent; }
   .feature-box:hover {
     transform: scale(1.05) translateY(-2rem);
     background-color: rgba(255, 255, 255, 0.99);
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
     .feature-box:hover .heading-tertiary {
-      border-bottom: 0.1rem solid #55c57a;
+      border-color: #55c57a;
       display: table;
       margin-right: auto;
       margin-left: auto; }

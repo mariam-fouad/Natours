@@ -15,13 +15,17 @@
         color:transparent;
     }
 
+    & >.heading-tertiary{
+        border-bottom: .1rem solid transparent;
+    }
+
     &:hover{
         transform: scale(1.05) translateY(-2rem);
         background-color: rgba($color-white,0.99);
         box-shadow: 0 3rem 5rem rgba($color-black,0.4);
 
         & .heading-tertiary{
-            border-bottom: .1rem solid $color-primary;
+            border-color: $color-primary;
             display: table;
             margin-right: auto;
             margin-left: auto;
