@@ -1,0 +1,17 @@
+.card{  
+    position: relative;
+    height: 50rem;
+    &__side{
+        height: 50rem;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        &--front{
+            background-color: #000;
+        }
+        &--back{
+            background-color: red;
+        }
+    }
+}

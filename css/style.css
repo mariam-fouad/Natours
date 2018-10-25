@@ -219,6 +219,20 @@ body {
       margin-right: auto;
       margin-left: auto; }
 
+.card {
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .card__side--front {
+      background-color: #000; }
+    .card__side--back {
+      background-color: red; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
