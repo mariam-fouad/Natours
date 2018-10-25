@@ -198,7 +198,15 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: .3rem;
   text-align: center;
-  height: 20rem; }
+  height: 35rem;
+  margin: 5rem 4rem; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin: 2rem 0;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .row {
   max-width: 114rem;
