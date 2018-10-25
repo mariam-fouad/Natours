@@ -4,7 +4,8 @@
     border-radius: .3rem;
     text-align: center;
     padding: 2.5rem;    
-    
+    transition: all 0.2s;
+
     &__icon{
         font-size: 6rem;
         margin: 2rem 0;
@@ -12,6 +13,12 @@
         background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
         -webkit-background-clip: text;
         color:transparent;
+    }
+
+    &:hover{
+        transform: scale(1.05) translateY(-2rem);
+        background-color: rgba($color-white,0.99);
+        box-shadow: 0 3rem 5rem rgba($color-black,0.4);
     }
 
 }
