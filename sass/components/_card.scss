@@ -14,11 +14,17 @@
         border-radius: .3rem;
 
         &--front{
-            background-color: #000;
+            background-color: $color-white;
         }
 
         &--back{
-            background-color: red;
+            &-1{
+                background-image: linear-gradient(
+                    to right bottom  ,
+                    $color-orange-light,
+                    $color-orange-dark 
+                    );
+            }
             transform: rotateY(180deg)
         }
     }
