@@ -231,7 +231,8 @@ body {
     width: 100%;
     backface-visibility: hidden;
     transition: all 0.8s ease;
-    border-radius: .3rem; }
+    border-radius: .3rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4); }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {

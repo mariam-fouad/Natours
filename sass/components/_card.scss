@@ -12,6 +12,7 @@
         backface-visibility: hidden;
         transition: all 0.8s ease;
         border-radius: .3rem;
+        box-shadow: 0 1rem 4rem rgba($color-black , 0.4);
 
         &--front{
             background-color: $color-white;
