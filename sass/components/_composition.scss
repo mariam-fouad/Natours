@@ -4,6 +4,8 @@
         width:55%;
         position: absolute;
         z-index: 10;
+        transition: all .2s;
+        
 
         &--img1{
             left:0;
@@ -18,6 +20,13 @@
         &--img3{
             left:5rem;
             top:11rem;
+        }
+
+        &:hover{
+            z-index: 15;
+            transform: scale(1.1) translateY(-2rem);
+            outline: .4rem solid $color-primary;
+            outline-offset: 1.5rem;
         }
     }
 }
