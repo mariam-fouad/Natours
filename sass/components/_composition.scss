@@ -29,5 +29,7 @@
             outline-offset: 1.5rem;
         }
     }
- 
+    &:hover &__image:not(:hover){
+        transform: scale(0.94) ;
+    }
 }

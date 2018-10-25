@@ -188,6 +188,8 @@ body {
       transform: scale(1.1) translateY(-2rem);
       outline: 0.4rem solid #55c57a;
       outline-offset: 1.5rem; }
+  .composition:hover .composition__image:not(:hover) {
+    transform: scale(0.94); }
 
 .row {
   max-width: 114rem;
