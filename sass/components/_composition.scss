@@ -5,6 +5,7 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
+        box-shadow: 0 1.5rem 4rem rgba($color-black,0.4);
         
 
         &--img1{
@@ -27,6 +28,7 @@
             transform: scale(1.1) translateY(-2rem);
             outline: .4rem solid $color-primary;
             outline-offset: 1.5rem;
+            box-shadow: 0 0.5rem 4rem rgba($color-black,0.5);
         }
     }
     &:hover &__image:not(:hover){

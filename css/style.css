@@ -173,7 +173,8 @@ body {
     width: 55%;
     position: absolute;
     z-index: 10;
-    transition: all .2s; }
+    transition: all .2s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
     .composition__image--img1 {
       left: 0;
       top: -2rem; }
@@ -187,7 +188,8 @@ body {
       z-index: 15;
       transform: scale(1.1) translateY(-2rem);
       outline: 0.4rem solid #55c57a;
-      outline-offset: 1.5rem; }
+      outline-offset: 1.5rem;
+      box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition:hover .composition__image:not(:hover) {
     transform: scale(0.94); }
 
