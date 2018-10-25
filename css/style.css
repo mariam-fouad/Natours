@@ -221,17 +221,26 @@ body {
 
 .card {
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  perspective: 150rem; }
   .card__side {
     height: 50rem;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    border-radius: .3rem; }
     .card__side--front {
       background-color: #000; }
     .card__side--back {
-      background-color: red; }
+      background-color: red;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .row {
   max-width: 114rem;
