@@ -222,7 +222,8 @@ body {
 .card {
   position: relative;
   height: 50rem;
-  perspective: 1500rem; }
+  perspective: 1500rem;
+  -moz-perspective: 1500rem; }
   .card__side {
     height: 50rem;
     position: absolute;

@@ -2,6 +2,8 @@
     position: relative;
     height: 50rem;
     perspective: 1500rem;
+    -moz-perspective: 1500rem;
+    
 
     &__side{
         height: 50rem;
