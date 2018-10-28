@@ -293,7 +293,7 @@ body {
         font-size: 1.6rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 0.3rem solid #eee; }
+          border-bottom: 0.2rem solid #eee; }
 
 .row {
   max-width: 114rem;
