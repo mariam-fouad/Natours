@@ -251,9 +251,16 @@ body {
     transform: rotateY(0deg); }
   .card__image {
     height: 23rem;
-    background-size: cover; }
+    background-size: cover;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__image--1 {
-      background-image: url("../img/nat-5.jpg"); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-5.jpg"); }
+    .card__image--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
+    .card__image--3 {
+      background-image: linear-gradient(to right bottom, #80a2ad, #2c4c57), url("../img/nat-7.jpg"); }
 
 .row {
   max-width: 114rem;
