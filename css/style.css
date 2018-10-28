@@ -222,7 +222,7 @@ body {
 .card {
   position: relative;
   height: 50rem;
-  perspective: 150rem; }
+  perspective: 1500rem; }
   .card__side {
     height: 50rem;
     position: absolute;
