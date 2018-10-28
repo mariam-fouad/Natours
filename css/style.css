@@ -282,6 +282,18 @@ body {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)); }
     .card__heading__span--3 {
       background-image: linear-gradient(to right bottom, rgba(128, 162, 173, 0.9), rgba(44, 76, 87, 0.9)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      margin: 0 auto;
+      width: 80%; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 0.3rem solid #eee; }
 
 .row {
   max-width: 114rem;
