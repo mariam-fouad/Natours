@@ -25,9 +25,9 @@
             &-1{
                 background-image: linear-gradient(
                     to right bottom  ,
-                    $color-orange-light,
-                    $color-orange-dark 
-                    );
+                    $color-blue-light,
+                    $color-violet 
+                    ); 
             }
 
             &-2{
@@ -41,8 +41,8 @@
             &-3{
                 background-image: linear-gradient(
                     to right bottom  ,
-                    $color-blue-light,
-                    $color-violet 
+                    $color-blue-grey-light,
+                    $color-blue-grey-dark 
                     ); 
             }
             transform: rotateY(-180deg)
