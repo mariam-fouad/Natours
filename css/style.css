@@ -233,7 +233,8 @@ body {
     backface-visibility: hidden;
     transition: all 0.8s ease;
     border-radius: .3rem;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -248,6 +249,11 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__image {
+    height: 23rem;
+    background-size: cover; }
+    .card__image--1 {
+      background-image: url("../img/nat-5.jpg"); }
 
 .row {
   max-width: 114rem;
