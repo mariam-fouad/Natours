@@ -340,12 +340,24 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     float: left;
-    transform: translate(-3rem) skewX(15deg); }
+    transform: translate(-3rem) skewX(15deg);
+    position: relative; }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4); }
   .story__text {
     transform: skewX(15deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    backface-visibility: hidden;
+    text-align: center;
+    opacity: 0; }
 
 .row {
   max-width: 114rem;
