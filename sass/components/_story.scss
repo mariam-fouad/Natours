@@ -41,5 +41,11 @@
         backface-visibility: hidden;
         text-align: center;
         opacity: 0;
+        transition: all 0.4s;
+    }
+
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%,-50%);
     }
 }

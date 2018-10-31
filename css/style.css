@@ -357,7 +357,11 @@ body {
     font-size: 1.7rem;
     backface-visibility: hidden;
     text-align: center;
-    opacity: 0; }
+    opacity: 0;
+    transition: all 0.4s; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
 
 .row {
   max-width: 114rem;
