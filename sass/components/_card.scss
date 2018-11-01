@@ -13,7 +13,7 @@
         width: 100%;
         backface-visibility: hidden;
         transition: all 0.8s ease;
-        border-radius: .3rem;
+        border-radius: $border-radius-primary;
         box-shadow: 0 1rem 4rem rgba($color-black , 0.4);
         overflow: hidden;
 
@@ -62,7 +62,7 @@
         -webkit-clip-path: polygon(0 0 ,  100% 0,100% 85%,0 100% );
         clip-path: polygon(0 0 ,  100% 0,100% 85%,0 100% );
         position: relative;
-        border-radius: 0.3rem;
+        border-radius: $border-radius-primary;
         &--1{
             background-image: linear-gradient(
                 to right bottom  ,
