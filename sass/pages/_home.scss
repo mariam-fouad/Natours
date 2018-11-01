@@ -30,3 +30,14 @@
     margin-top:-10rem;
     position: relative;
 }
+
+.section-book{
+    padding: 25rem 0;
+    background-image: linear-gradient(to right bottom ,$color-primary-light,$color-primary-dark);
+}
+
+.book{
+    background-image: url('../img/nat-10.jpg');
+    height:50rem;
+    background-size: cover;
+}
