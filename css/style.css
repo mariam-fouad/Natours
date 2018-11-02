@@ -108,7 +108,7 @@ body {
 .u-margin-top-XLarge {
   margin-top: 10rem !important; }
 
-.btn:Link, .btn:visited {
+.btn, .btn:Link, .btn:visited {
   text-decoration: none;
   display: inline-block;
   padding: 1.5rem 4rem;
@@ -116,7 +116,8 @@ body {
   text-transform: uppercase;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -125,9 +126,10 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(1px);
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  outline: none; }
 
 .btn--white {
   color: #777;
