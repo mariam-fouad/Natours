@@ -228,6 +228,41 @@ body {
       margin-right: auto;
       margin-left: auto; }
 
+.form__element:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  padding: 1.5rem 2rem;
+  width: 90%;
+  display: block;
+  border: none;
+  border-bottom: .3rem solid transparent;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit; }
+  .form__input:focus {
+    outline: none; }
+    .form__input:focus:valid {
+      border-bottom: 0.3rem solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 0.3rem solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem); }
+
 .card {
   position: relative;
   height: 54rem;
