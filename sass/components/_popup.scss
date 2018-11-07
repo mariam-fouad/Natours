@@ -6,18 +6,22 @@
     z-index: 4000;
     top:0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
 
     &__box{
         width: 75%;
         position: absolute;
         top:50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%) scale(0.25);
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black,0.2);
         border-radius: .3rem;
         overflow: hidden;
         display: table;
+        transition: all 0.4s 0.2s;
     }
 
     &__left{
@@ -50,6 +54,34 @@
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__box{
+        transform:  translate(-50%,-50%) scale(1);
+    }
+
+    &__close{
+        &:link,
+        &:visited{
+            position: absolute;
+            top:2.5rem;
+            right: 2.5rem;
+            line-height: 1;
+            font-size: 3rem;
+            text-decoration: none;
+            color:$color-grey-dark;
+            transition: color 0.3s;
+        }
+        &:hover,
+        &:active{
+            color:$color-primary;
+        }
+        
     }
 
 }
