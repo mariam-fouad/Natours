@@ -18,20 +18,20 @@ Big-desk > 1800px
 
 */
 
-@mixin MediaQuieryManger ($breakpoint){
-    @if ($breakpoint == phone){
+@mixin MediaQuieryManger($breakpoint){
+    @if $breakpoint == phone{
         @media (max-width : 37.5em){@content};  //600px {600/16} 
     }
 
-    @if ($breakpoint == Tab-port){
+    @if $breakpoint == Tab-port{
         @media (max-width : 56.25em){@content};  //900px {900/16} 
     }
 
-    @if ($breakpoint == Tabt-land){
+    @if $breakpoint == Tabt-land{
         @media (max-width : 75em){@content};  //1200px {1200/16} 
     }
 
-    @if ($breakpoint == Big-desk){
+    @if $breakpoint == Big-desk{
         @media (min-width : 112.5em){@content};  //1800px {1800/16} 
     }
 }
