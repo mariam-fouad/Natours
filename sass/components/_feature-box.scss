@@ -6,6 +6,11 @@
     padding: 2.5rem;    
     transition: all 0.2s;
 
+    @include MediaQuieryManger (tab-port){
+        background-color: rgba($color-white,0.81);
+        padding: 1.5rem;
+    }
+
     &__icon{
         font-size: 6rem;
         margin: 2rem 0;
@@ -13,6 +18,10 @@
         background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
         -webkit-background-clip: text;
         color:transparent;
+
+        @include MediaQuieryManger (tab-port){
+            margin: 0;
+        }
     }
 
     & >.heading-tertiary{

@@ -276,6 +276,10 @@ body {
   text-align: center;
   padding: 2.5rem;
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      background-color: rgba(255, 255, 255, 0.81);
+      padding: 1.5rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin: 2rem 0;
@@ -283,6 +287,9 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin: 0; } }
   .feature-box > .heading-tertiary {
     border-bottom: .1rem solid transparent; }
   .feature-box:hover {
