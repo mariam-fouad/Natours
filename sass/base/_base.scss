@@ -26,4 +26,9 @@ html{
 body{
     padding:3rem;
     box-sizing: border-box;
+
+    @include MediaQuieryManger (tab-port){
+        padding: 0;
+    }
+
 }
