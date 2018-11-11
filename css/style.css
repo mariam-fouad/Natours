@@ -134,12 +134,21 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-large {
   margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-large {
+      margin-bottom: 4.5rem !important; } }
 
 .u-margin-top-small {
   margin-top: 2rem !important; }
@@ -149,6 +158,9 @@ body {
 
 .u-margin-top-XLarge {
   margin-top: 10rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-XLarge {
+      margin-top: 6rem !important; } }
 
 .btn, .btn:Link, .btn:visited {
   text-decoration: none;
