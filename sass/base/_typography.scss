@@ -24,6 +24,7 @@ body{
         animation-timing-function: ease-out;
 
         @include MediaQuieryManger (phone){
+            font-size: 5rem;
             letter-spacing: 1rem;
         }
     }
@@ -52,6 +53,13 @@ body{
     color:transparent;
     letter-spacing: 0.2rem;
     transition: all 0.2s;
+
+    @include MediaQuieryManger (tab-port){
+        font-size: 3rem;
+    }
+    @include MediaQuieryManger (phone){
+        font-size: 2.5rem;
+    }
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
