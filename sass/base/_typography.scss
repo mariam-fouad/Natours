@@ -22,6 +22,10 @@ body{
         animation-name: moveFromLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include MediaQuieryManger (phone){
+            letter-spacing: 1rem;
+        }
     }
     
     &--sub{
@@ -31,6 +35,10 @@ body{
         letter-spacing: 1.74rem;
     
         animation: moveFromRight 1s ease-out;
+        
+        @include MediaQuieryManger (phone){
+            letter-spacing: 1rem;
+        }
     }
 }
 
