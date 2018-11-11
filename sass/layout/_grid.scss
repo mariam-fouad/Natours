@@ -12,6 +12,10 @@
         &:not(:last-child){
             margin-right: $gutter-horizontal;
         }
+
+        @include MediaQuieryManger (tab-port){
+            width: 100% !important;
+        }
     }
     .col-1-2{
         width: calc( (100% - #{$gutter-horizontal}) /2 );
