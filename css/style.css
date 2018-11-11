@@ -638,6 +638,10 @@ body {
     border-top: 0.1rem solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        text-align: center;
+        width: 100%; } }
   .footer__list {
     list-style: none; }
   .footer__element {
@@ -658,6 +662,10 @@ body {
     border-top: 0.1rem solid #777;
     padding-top: 2rem;
     width: 80%; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        text-align: center;
+        width: 100%; } }
 
 .navigation__checkbox {
   display: none; }
