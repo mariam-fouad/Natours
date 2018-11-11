@@ -5,3 +5,33 @@
         clear: both;
     }
 }
+
+/*
+Media Quiery Breakpoint:
+
+Phone < 600px
+Tab-port < 900px
+Tabt-land < 1200px 
+Our design for the normal desktop 
+Big-desk > 1800px
+
+
+*/
+
+@mixin MediaQuieryManger ($breakpoint){
+    @if ($breakpoint == phone){
+        @media (max-width : 37.5em){@content};  //600px {600/16} 
+    }
+
+    @if ($breakpoint == Tab-port){
+        @media (max-width : 56.25em){@content};  //900px {900/16} 
+    }
+
+    @if ($breakpoint == Tabt-land){
+        @media (max-width : 75em){@content};  //1200px {1200/16} 
+    }
+
+    @if ($breakpoint == Big-desk){
+        @media (max-width : 112.5em){@content};  //1800px {1800/16} 
+    }
+}
