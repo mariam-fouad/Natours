@@ -11,6 +11,10 @@
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+
+            @include MediaQuieryManger (tab-port){
+                margin-right:0;
+            }
         }
 
         @include MediaQuieryManger (tab-port){
