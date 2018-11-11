@@ -19,6 +19,7 @@
 
             @include MediaQuieryManger (tab-port){
                 margin-right:0;
+                margin-bottom:$gutter-vertical-small;
             }
         }
 
