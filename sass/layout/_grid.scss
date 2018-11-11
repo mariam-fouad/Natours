@@ -10,6 +10,10 @@
 
     }
 
+    @include MediaQuieryManger (tab-port){
+        max-width: $grid-width-small;
+    }
+
     @include clearfix;
 
     [class^="col-"]{
