@@ -7,19 +7,21 @@
 }
 html{
     font-size:62.5%;    //1rem = 10px -10/16
+    
+    @include MediaQuieryManger (Big-desk){
+        font-size: 75%;     //1rem = 12px -12/16
+    }
+    
+    @include MediaQuieryManger (Tabt-land){
+        font-size: 56.25%;     //1rem = 9px -9/16
+    }
+    
+    @include MediaQuieryManger (Tab-port){
+        font-size: 50%;     //1rem = 8px -8/16
+    }
+    
 }
 
-@include MediaQuieryManger (Big-desk){
-    font-size: 75%;     //1rem = 12px -12/16
-}
-
-@include MediaQuieryManger (Tabt-land){
-    font-size: 56.25%;     //1rem = 9px -9/16
-}
-
-@include MediaQuieryManger (Tab-port){
-    font-size: 50%;     //1rem = 8px -8/16
-}
 
 body{
     padding:3rem;
