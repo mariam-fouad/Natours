@@ -709,7 +709,7 @@ body {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .navigation__background {
       top: 3rem;
       right: 3rem; } }
