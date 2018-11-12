@@ -481,6 +481,41 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      position: relative;
+      height: auto;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+      background-color: #fff; }
+      .card__side {
+        height: auto;
+        position: relative;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 0.3rem;
+        box-shadow: none;
+        overflow: hidden; }
+        .card__side--back {
+          transform: rotateY(0);
+          height: auto;
+          -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__booking-details {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 5rem;
+        font-weight: 100; } }
 
 .story {
   width: 75%;

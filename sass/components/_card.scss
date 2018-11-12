@@ -171,4 +171,52 @@
         font-weight: 100;
     }
 
+
+    @include MediaQuieryManger (tab-port){
+        position: relative;
+        height: auto;
+        box-shadow: 0 1rem 4rem rgba($color-black , 0.4);
+        background-color: $color-white;
+
+        &__side{
+            height: auto;
+            position: relative;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: $border-radius-primary;
+            box-shadow: none;
+            overflow: hidden;
+
+            &--back{
+                transform: rotateY(0);
+                height: auto;
+                -webkit-clip-path: polygon(0 13% ,  100% 0,100% 100%,0 100% );
+                clip-path: polygon(0 13% ,  100% 0,100% 100%,0 100% );
+            }
+        }
+        &:hover &__side--front{
+            transform: rotateY(0);
+        }
+
+        &__details{        
+            padding: 1rem 3rem;
+        }
+
+        &__booking-details{
+            position: relative;
+            top:0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+        &__price-box{
+             margin-bottom: 3rem;
+        }
+        &__price-value{
+            font-size: 5rem;
+            font-weight: 100;
+        }
+    }
+
 }
