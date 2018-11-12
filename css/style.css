@@ -686,7 +686,8 @@ body {
     .popup__close:link, .popup__close:visited {
       top: 1rem;
       right: 1rem;
-      font-size: 3.5rem; } }
+      font-size: 3.5rem;
+      padding: 1rem; } }
 
 .row {
   max-width: 114rem;
