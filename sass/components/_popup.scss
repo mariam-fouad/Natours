@@ -84,4 +84,48 @@
         
     }
 
+    @include MediaQuieryManger (tabt-land){
+        &__box{
+            width: 90%;
+            transform: translate(-50%,-50%) scale(0);
+            display: block;
+            transition: all 0.4s 0.2s;
+        }
+
+        &__left{
+            display: block;
+            width: 100%;
+            text-align: center;
+            height: 5%;
+        }
+
+        &__right{
+            display: block;
+            width:100%;
+            padding: 1rem 3rem 1rem 3rem;
+            height: 95%;
+        }
+
+        &__img{
+            width: 49%;
+            display: inline-block;
+        }
+
+        &__text{
+            margin-bottom: 3rem;
+            column-gap: 2rem;
+        }
+
+        &__close{
+            &:link,
+            &:visited{
+                top:1rem;
+                right: 1rem;
+                font-size: 3.5rem;
+            }
+        }
+
+      
+    }
+
 }
