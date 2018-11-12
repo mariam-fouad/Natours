@@ -527,6 +527,11 @@ body {
   font-size: 1.6rem;
   margin: 0 auto;
   transform: skewX(-15deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 90%;
+      padding: 3rem;
+      padding-left: 6rem; } }
   .story__figure {
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);

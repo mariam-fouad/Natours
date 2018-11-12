@@ -10,6 +10,12 @@
         margin: 0 auto;
         transform: skewX(-15deg);
 
+        @include MediaQuieryManger (tab-port){
+            width: 90%;
+            padding: 3rem;
+            padding-left: 6rem;
+        }
+
     &__figure{
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
