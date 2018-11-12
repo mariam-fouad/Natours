@@ -532,6 +532,12 @@ body {
       width: 90%;
       padding: 3rem;
       padding-left: 6rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      width: 90%;
+      padding: 3rem;
+      padding-left: 6rem;
+      transform: skewX(0); } }
   .story__figure {
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
@@ -542,12 +548,18 @@ body {
     float: left;
     transform: translate(-3rem) skewX(15deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__figure {
+        transform: translate(-3rem) skewX(0); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.4s; }
   .story__text {
     transform: skewX(15deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;

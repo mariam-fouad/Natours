@@ -16,6 +16,13 @@
             padding-left: 6rem;
         }
 
+        @include MediaQuieryManger (phone){
+            width: 90%;
+            padding: 3rem;
+            padding-left: 6rem;
+            transform: skewX(0);
+        }
+
     &__figure{
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
@@ -26,6 +33,11 @@
         float:left;
         transform: translate(-3rem) skewX(15deg);
         position: relative;
+
+        @include MediaQuieryManger (phone){
+            transform: translate(-3rem) skewX(0);
+        }
+
     }
 
     &__image{
@@ -35,6 +47,10 @@
     }
     &__text{
         transform: skewX(15deg);
+
+        @include MediaQuieryManger (phone){
+            transform: skewX(0);
+        }
     }
 
     &__caption{
