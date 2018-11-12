@@ -67,8 +67,30 @@
     box-shadow: 0 2rem 4rem rgba($color-black,0.3);
     border-radius: $border-radius-primary;
 
+    @include MediaQuieryManger (tabt-land){
+        background-image: linear-gradient(105deg ,
+                        rgba($color-white, 0.9)0%,
+                        rgba($color-white, 0.9)65%,
+                        transparent 65%) ,
+                       url('../img/nat-10.jpg');
+    }
+
+    @include MediaQuieryManger (tab-port){
+        background-image: linear-gradient(to right ,
+                        rgba($color-white, 0.8)0%,
+                        rgba($color-white, 0.8)100%) ,url('../img/nat-10.jpg');
+    }
+
     &__form{
         width: 50%;
         padding: 6rem;
+
+        @include MediaQuieryManger (tabt-land){
+            width: 65%;   
+        }
+
+        @include MediaQuieryManger (tab-port){
+            width: 100%;
+        }
     }
 }
