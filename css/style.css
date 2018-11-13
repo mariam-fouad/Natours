@@ -278,8 +278,17 @@ body {
       outline: 0.4rem solid #55c57a;
       outline-offset: 1.5rem;
       box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.5); }
+      @media (max-width: 56.25em) {
+        .composition__image:hover {
+          z-index: 25;
+          transform: scale(1.7) translateY(-1rem);
+          outline: 0.1rem solid #55c57a;
+          outline-offset: 0.75rem; } }
   .composition:hover .composition__image:not(:hover) {
     transform: scale(0.94); }
+    @media (max-width: 56.25em) {
+      .composition:hover .composition__image:not(:hover) {
+        transform: scale(1.1) translateY(1); } }
 
 .feature-box {
   font-size: 1.5rem;

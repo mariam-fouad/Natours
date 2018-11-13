@@ -57,9 +57,20 @@
             outline: .4rem solid $color-primary;
             outline-offset: 1.5rem;
             box-shadow: 0 0.5rem 4rem rgba($color-black,0.5);
+
+            @include MediaQuieryManger (tab-port){
+                z-index: 25;
+                transform: scale(1.7) translateY(-1rem);
+                outline: .1rem solid $color-primary;
+                outline-offset: 0.75rem;
+            }
         }
     }
     &:hover &__image:not(:hover){
         transform: scale(0.94) ;
+
+        @include MediaQuieryManger (tab-port){
+            transform: scale(1.1) translateY(1);
+        }
     }
 }
