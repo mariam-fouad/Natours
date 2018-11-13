@@ -415,6 +415,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.8s ease;
     border-radius: 0.3rem;
