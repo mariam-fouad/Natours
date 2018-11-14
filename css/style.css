@@ -556,15 +556,20 @@ body {
       padding-left: 6rem;
       transform: skewX(0); } }
   .story__figure {
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
     width: 15rem;
     height: 15rem;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
     float: left;
     transform: translate(-3rem) skewX(15deg);
-    position: relative; }
+    position: relative;
+    border-radius: 50%; }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .story__figure {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 37.5em) {
       .story__figure {
         transform: translate(-3rem) skewX(0); } }
